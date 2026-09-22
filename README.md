@@ -45,6 +45,23 @@ Component_A/
 `.venv/`:contains the local Python virtual environment.
 `README.md`: provides documentation for the project.
 
+# Running the project 
+1. Create the virtual environment 
+```bash
+python3 -m venv .venv
+```
+2. Activate the virtual environment 
+```bash
+source .venv/bin/activate
+```
+3. Install the dependencies 
+```bash
+pip install -r requirements.txt
+```
+4. Run the analysis 
+Run the script `analysis.py`, it reads the input data and process the closing prices calculating the 20 day simple moving average, and generates the plot.
+The resulting visualization is saved in:
+`outputs/plot.png`
 
 
 
